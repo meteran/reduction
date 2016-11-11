@@ -14,7 +14,5 @@ VENV_DIR=.venv
 $VENV --system-site-packages $VENV_DIR
 source $VENV_DIR/bin/activate
 python -m pip install -r requirements.txt
-cd notebooks
 jupyter notebook
-cd ..
 deactivate
