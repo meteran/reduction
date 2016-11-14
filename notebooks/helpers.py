@@ -37,11 +37,11 @@ def plot_embedding(embedded_set, original_set, title=None):
 
 
 def plot_3D(X, color):
-    fig = plt.figure()
+    fig = plt.figure(figsize=(15, 15))
     try:
         # compatibility matplotlib < 1.0
         ax = fig.add_subplot(211, projection='3d')
-        ax.scatter(X[:, 0], X[:, 1], X[:, 2], c=color, cmap=plt.cm.Spectral)
+        ax.scatter(X[:, 0], X[:, 1], X[:, 2], c=color, cmap=plt.cm.Spectral, alpha=1)
     except:
         ax = fig.add_subplot(211)
         ax.scatter(X[:, 0], X[:, 2], c=color, cmap=plt.cm.Spectral)
