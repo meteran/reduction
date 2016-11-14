@@ -2,7 +2,7 @@
 
 ## Creating environment
   * With _docker_:
-    1. `docker pull continuumio/anaconda3` or if have not enough disk space `docker pull continuumio/miniconda3`
+    1. `docker pull continuumio/anaconda3` or if you have not enough disk space `docker pull continuumio/miniconda3`
     1. `docker run --rm -i -t -p 8888:8888 continuumio/anaconda3 /bin/bash` or `docker run --rm -i -t -p 8888:8888 continuumio/miniconda3 /bin/bash` 
     1. Go to `Running` step
 
